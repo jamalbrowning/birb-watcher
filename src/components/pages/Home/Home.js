@@ -14,7 +14,7 @@ render() {
         <h1>Home</h1>
         <button className="btn btn-dark" onClick={this.editBirbEvent}> Edit A Birb</button>
         <Link to='/new'>New Birb</Link>
-        <Link to='/birbs/brib1234566'>Specific birb</Link>
+        <Link to='/birbs/brib1234566gc'>Specific birb</Link>
       </div>
   );
 }
