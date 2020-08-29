@@ -1,0 +1,11 @@
+  {
+    "firebaseConfig" : {
+    "apiKey": "AIzaSyA151Ns8KpaEv2VpcYjD-RYoxxa0mhOatk",
+    "authDomain": "birb-watcher-2cc67.firebaseapp.com",
+    "databaseURL": "https://birb-watcher-2cc67.firebaseio.com",
+    "projectId": "birb-watcher-2cc67",
+    "storageBucket": "birb-watcher-2cc67.appspot.com",
+    "messagingSenderId": "552870642714",
+    "appId": "1:552870642714:web:e640b89140b938366e3da3"
+  }
+}
