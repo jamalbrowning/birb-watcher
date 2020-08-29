@@ -1,13 +1,20 @@
 import React from 'react';
 
 class Home extends React.Component {
-  render() {
-    return (
+editBirbEvent = (e) => {
+  e.preventDefault();
+  const birbId = 'birb1000';
+  this.props.history.push(`/edit/${birbId}`);
+}
+
+render() {
+  return (
       <div className="Home">
         <h1>Home</h1>
+        <button className="btn btn-dark" onClick={this.editBirbEvent}> Edit A Birb</button>
       </div>
-    );
-  }
+  );
+}
 }
 
 export default Home;
