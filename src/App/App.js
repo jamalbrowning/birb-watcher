@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Switch,
   BrowserRouter,
@@ -58,7 +59,7 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <React.Fragment>
-            <NavBar />
+            <NavBar authed={authed} />
             <div className="container">
               <Switch>
                 <PrivateRoute path="/home" component={Home} authed={authed}/>
