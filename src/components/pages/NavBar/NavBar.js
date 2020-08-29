@@ -11,10 +11,8 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="MyNavbar">
-        <nav className="navbar navbar-light bg-light justify-content-between text-center">
           <h1>My Navbar</h1>
           <button className="btn btn-danger" onClick={this.logMeOut}>Logout</button>
-        </nav>
       </div>
     );
   }
