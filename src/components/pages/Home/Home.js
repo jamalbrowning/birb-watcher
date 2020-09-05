@@ -1,8 +1,9 @@
 import React from 'react';
 
+import BirbCard from '../BirbCard/BirbCard';
+
 import authData from '../../../helpers/data/authData';
 import birbsData from '../../../helpers/data/birbsData';
-import BirbCard from '../BirbCard/BirbCard';
 
 class Home extends React.Component {
   state = {
