@@ -1,6 +1,7 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import _ from 'underscore';
+import { Link } from 'react-router-dom';
 
 import authData from '../../../helpers/data/authData';
 
@@ -81,6 +82,7 @@ class NewBirb extends React.Component {
       .createBirb(newBirb)
       .then((res) => {
         this.props.history.push(`/birbs/${res.data.name}`);
+        document.location.href = '/';
       })
       .catch((err) => console.error('new birb broke', err));
   };
@@ -187,9 +189,11 @@ class NewBirb extends React.Component {
               showTimeSelect
             />
           </div>
-          <button className="btn btn-warning" onClick={this.saveBirb}>
-            Save Birb
-          </button>
+         <Link to="/home">
+         <button className="btn btn-warning" onClick={this.saveBirb}>
+              Save Birb
+            </button>
+         </Link>
         </form>
       </div>
     );
